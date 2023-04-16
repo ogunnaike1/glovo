@@ -1,0 +1,339 @@
+@import url(/CSS/query.css);
+
+
+$background-color:#FFC244;
+$textcolor:#000000;
+$background-color2:#00846B;
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+}
+nav{
+    background-color: $background-color;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .navwrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 85%;
+        margin:0 auto;
+        padding: 30px 0;
+        background-color: $background-color;
+        
+        
+        
+
+        .glovo-img{
+            
+
+            img{
+                height: 40px;
+            }
+
+        }
+        .get-started{
+            a{
+                text-decoration: none;
+               
+                font-size: 14px;
+                color: white;
+                font-weight: 700;
+                padding: 15px 30px;
+                background-color: #00A082;
+                border-radius: 30px;
+            }
+
+        }
+    }
+}
+
+@media (max-width:600px) {
+    nav{
+        .navwrapper{
+             padding: 10px 0;
+             max-width: 90%;
+    
+            .glovo-img{
+            
+                img{
+                    height: 20px;
+                }
+            }
+            .get-started{
+                a{
+                    text-decoration: none;
+                   
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 700;
+                    padding: 7px 15px;
+                    background-color: #00A082;
+                    border-radius: 15px;
+                }
+    
+            }
+        }
+    }
+    
+    
+}
+
+
+.homecontainer{
+    position: relative;
+    background-color: $background-color;
+
+.homewrapper{ 
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+.homewrapper1{
+    
+    height: 400px;
+    
+
+}
+.homewrapper2{
+    
+    
+    
+    .Food-delivery{
+     
+        font-weight: 700;
+        text-align: center;
+        
+       
+
+    }
+    .Groceries{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 25px;
+
+    }
+    .input-adress{
+        display: flex;
+        background-color: white;
+        
+        align-items: center;
+        margin-top: 30px;
+        height: 50px;
+        border-radius: 10px;
+        
+       
+        .icon1{
+            width: 50px;
+            font-size: 24px;
+            background-color: $background-color2;
+           
+            
+            padding: 11px 0;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            
+            .bi-mailbox{
+                
+                margin: 10px 10px 0 10px;
+                color: white;
+                
+                 
+
+            }
+        }
+        .inputwrap{
+            height: 80%;
+            
+
+
+       
+        input{
+            height: 100%;
+            padding: 0 10px;
+            outline: 0;
+            border: none;
+            
+           
+                
+            }
+            
+
+        }
+        .use-location{
+            margin-left: 26%;
+            .bi-send-fill{
+                font-size: 15px;
+                margin-right: 15px;
+                color: $background-color2;
+                
+
+
+            }
+            span{
+                font-size: 14px;
+                color: $background-color2;
+            }
+        }
+      
+    }
+
+    }
+
+
+}
+::placeholder{
+    font-size: 16px;
+}
+
+}
+
+svg{
+    display: none;
+    position: absolute;
+    
+    top: 87%;
+    z-index: -1;
+  
+  transform: rotatey(180deg);
+   
+
+}
+
+@media  (max-width:1100px){
+    .homewrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+        .homewrapper1{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            video{
+                width: 100%;
+               }
+            
+           
+        }
+        
+    }
+
+    
+}
+
+@media  (min-width:600px){
+    .homecontainer{
+
+    .Food-delivery{
+        font-size: 58px;
+        width: 90%;
+
+    }
+    svg{
+        display: block;
+        
+    }
+
+ 
+}
+}  
+
+
+
+@media  (max-width:600px){
+    .homecontainer{
+    .homewrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+        .homewrapper1{
+           
+            display: flex;
+            align-items: center;
+            
+           
+        }
+        .homewrapper2{
+            .Food-delivery{
+                font-size: 40px;
+                 width: 100%;
+                 margin-top: -50px;
+                
+              
+               
+        
+            }
+        }
+        
+    }
+    svg{
+        display: none;
+    }
+    }
+    
+}
+@media  (min-width:1000px){
+    .use2{
+        display: none;
+    }
+
+
+}
+@media  (max-width:1000px){
+          .homewrapper2{
+            .input-adress{
+                .icon1{
+                    width: 20%;
+                    margin-right: 20px;
+                         
+                    }
+                
+                .inputwrap{
+                    width: 70%;
+                input{
+                    height: 80%;
+                             
+                    }
+                }
+                .use-location{
+                    display: none;
+        
+                    } 
+            
+            }   
+
+            .use2{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+              
+                span{
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $background-color2;
+                    cursor: pointer;
+                }
+            }  
+                   
+                }
+            } 
+
+         
+
+
+            
+          
+            
+            
+            
+            
+           
+        
+
+

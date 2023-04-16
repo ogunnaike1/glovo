@@ -1,0 +1,207 @@
+@import url(/CSS/query.css);
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #FFC244;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav .navwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #FFC244;
+}
+nav .navwrapper .glovo-img img {
+  height: 40px;
+}
+nav .navwrapper .get-started a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  padding: 15px 30px;
+  background-color: #00A082;
+  border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  nav .navwrapper {
+    padding: 10px 0;
+    max-width: 90%;
+  }
+  nav .navwrapper .glovo-img img {
+    height: 20px;
+  }
+  nav .navwrapper .get-started a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    padding: 7px 15px;
+    background-color: #00A082;
+    border-radius: 15px;
+  }
+}
+.homecontainer {
+  position: relative;
+  background-color: #FFC244;
+}
+.homecontainer .homewrapper {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.homecontainer .homewrapper .homewrapper1 {
+  height: 400px;
+}
+.homecontainer .homewrapper .homewrapper2 .Food-delivery {
+  font-weight: 700;
+  text-align: center;
+}
+.homecontainer .homewrapper .homewrapper2 .Groceries {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 10px;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .icon1 {
+  width: 50px;
+  font-size: 24px;
+  background-color: #00846B;
+  padding: 11px 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .icon1 .bi-mailbox {
+  margin: 10px 10px 0 10px;
+  color: white;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .inputwrap {
+  height: 80%;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .inputwrap input {
+  height: 100%;
+  padding: 0 10px;
+  outline: 0;
+  border: none;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .use-location {
+  margin-left: 26%;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .use-location .bi-send-fill {
+  font-size: 15px;
+  margin-right: 15px;
+  color: #00846B;
+}
+.homecontainer .homewrapper .homewrapper2 .input-adress .use-location span {
+  font-size: 14px;
+  color: #00846B;
+}
+.homecontainer ::-moz-placeholder {
+  font-size: 16px;
+}
+.homecontainer ::placeholder {
+  font-size: 16px;
+}
+
+svg {
+  display: none;
+  position: absolute;
+  top: 87%;
+  z-index: -1;
+  transform: rotatey(180deg);
+}
+
+@media (max-width: 1100px) {
+  .homewrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .homewrapper .homewrapper1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .homewrapper .homewrapper1 video {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .homecontainer .Food-delivery {
+    font-size: 58px;
+    width: 90%;
+  }
+  .homecontainer svg {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .homecontainer .homewrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .homecontainer .homewrapper .homewrapper1 {
+    display: flex;
+    align-items: center;
+  }
+  .homecontainer .homewrapper .homewrapper2 .Food-delivery {
+    font-size: 40px;
+    width: 100%;
+    margin-top: -50px;
+  }
+  .homecontainer svg {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .use2 {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .homewrapper2 .input-adress .icon1 {
+    width: 20%;
+    margin-right: 20px;
+  }
+  .homewrapper2 .input-adress .inputwrap {
+    width: 70%;
+  }
+  .homewrapper2 .input-adress .inputwrap input {
+    height: 80%;
+  }
+  .homewrapper2 .input-adress .use-location {
+    display: none;
+  }
+  .homewrapper2 .use2 {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .homewrapper2 .use2 span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #00846B;
+    cursor: pointer;
+  }
+}
